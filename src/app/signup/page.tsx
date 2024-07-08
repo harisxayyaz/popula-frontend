@@ -3,13 +3,13 @@ import React from "react";
 const Signup = () => {
   return (
     <main className="flex flex-col md:flex-row w-screen h-screen">
-      <section className="md:w-[60%] md:h-full  p-6 flex flex-col order-1 md:order-2">
+      <section className="md:w-[60%] md:h-full p-6 flex flex-col order-1 md:order-2">
         <div className="flex justify-center sm:items-center md:justify-end mb-6 ">
-          <p className="text-blue-500 cursor-pointer">
+          <p className="text-blue-500 cursor-pointer md:text-lg text-sm">
             Already have an account? Sign in
           </p>
         </div>
-        <div className="flex flex-col justify-center md:h-full ">
+        <div className="flex flex-col justify-center md:h-full h-[80vh] ">
           <div className="flex justify-center mb-6">
             <img src="/logo.svg" alt="Logo" className="h-12" />
           </div>
@@ -69,6 +69,7 @@ const Signup = () => {
         </div>
       </section>
 
+      {/* Image and Testimonial Section */}
       <section
         className="flex flex-col gap-3 justify-center items-center md:h-full md:w-[40%] bg-[#270139] text-center md:text-left py-8 px-24 bg-cover bg-center order-2 md:order-1"
         style={{ backgroundImage: "url('/design.svg')" }}
