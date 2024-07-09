@@ -18,6 +18,7 @@ const Signup = () => {
         <div className="flex flex-col justify-center md:h-full h-[80vh] ">
           <div className="flex justify-center mb-6">
             <form className="space-y-6 w-full max-w-md">
+              <img src="logo.svg" alt="logo" className="h-12 block md:hidden" />
               <div className={`${unna.className} `}>
                 <h1 className=" text-4xl font-bold">
                   Create Your Free Account And Get Started!
@@ -83,7 +84,12 @@ const Signup = () => {
         className="flex flex-col gap-3 justify-center items-center md:h-full md:w-[40%] bg-[#270139] text-center md:text-left py-8 px-24 bg-cover bg-center order-2 md:order-1"
         style={{ backgroundImage: "url('/design.svg')" }}
       >
-        <img src="whiteLogo.svg" alt="white logo" className="h-12" />
+        <img
+          src="whiteLogo.svg"
+          alt="white logo"
+          className="h-12 md:block hidden"
+        />
+
         <img src="user.png" alt="user photo" className="h-24 w-24" />
         <p className="text-white text-center">
           “POPULA provided exceptional service, exceeding my expectations and
